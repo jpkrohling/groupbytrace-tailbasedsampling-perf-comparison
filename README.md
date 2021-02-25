@@ -7,8 +7,8 @@ This repository contains the results for the performance tests comparing the [`g
 ## Motivation
 
 The tail-based sampling has two main roles:
-- hold traces in memory for a specific period of time, so that a decision is made based on the trace as a whole
-- make the sampling decision bases on the configured policy
+- holds traces in memory for a specific period of time, so that a decision is made based on the trace as a whole
+- makes the sampling decision based on the configured policy
 
 There is a discussion in the community about splitting this processor into two, so that those two concerns are handled by different processors. This is particularly appealing given that the `groupbytrace` processor exists, covering a big part of the work done by the tail-based sampling processor.
 
@@ -41,6 +41,8 @@ The `prometheus.yaml` contains the Prometheus configuration to scrape the endpoi
 
 ## Results
 
+The [`results`](./results) directory contains the raw metrics and logs for the two scenarios.
+
 PromQL queries:
 ```
 otelcol_process_runtime_heap_alloc_bytes{instance="otel-collector:8888", job="otel-collector"}
@@ -66,3 +68,8 @@ The histogram `otelcol_processor_tail_sampling_sampling_decision_timer_latency_b
 - The groupbytrace processor has as higher CPU consumption, and very little memory usage. Making the internal buffer configurable might help improve the throughput.
 - None of the scenarios got all the spans sent from the load generator acknowledged by the receiver (`otelcol_receiver_accepted_spans`). The load utility sends 20M traces (40M spans). The receiver in the tail-based scenario acknowledged around 38M spans, while the groupbytrace acknowledged around 30M spans. I cannot yet determine the cause of this, as I would expect this difference to show up in some metric, like `otelcol_receiver_refused_spans`.
 - The logging exporter reports that both processors were able to process all spans that were received (`otelcol_exporter_sent_spans` vs. `otelcol_receiver_accepted_spans`).
+
+### Next steps
+
+- Change the groupbytrace to have a configurable buffer size
+- Run a variant of this test with a candidate for the policy sampling processor, and run it with the groupbytrace scenario and a similar configuration for the tail-based sampling processor, so that we can assess the overhead of calling another processor vs. doing everything in one.
