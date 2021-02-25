@@ -1,0 +1,35 @@
+receivers:
+  otlp:
+    protocols:
+      grpc:
+        endpoint: localhost:55680
+
+processors:
+  tail_sampling:
+    decision_wait: 1s
+    num_traces: 1_000_000
+    expected_new_traces_per_sec: 100_000
+    policies:
+      [
+        {
+          name: client-server-traces,
+          type: always_sample
+        },
+      ]
+
+  batch:
+    send_batch_size: 10_000
+
+exporters:
+  logging:
+
+service:
+  pipelines:
+    traces/loadbalancer:
+      receivers:
+        - otlp
+      processors:
+        - tail_sampling
+        - batch
+      exporters:
+        - logging

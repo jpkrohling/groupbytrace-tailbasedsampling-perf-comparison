@@ -1,0 +1,15 @@
+2021-02-25T14:28:05.055Z	INFO	channelz/logging.go:50	[core]parsed scheme: ""	{"system": "grpc", "grpc_log": true}
+2021-02-25T14:28:05.055Z	INFO	channelz/logging.go:50	[core]scheme "" not registered, fallback to default scheme	{"system": "grpc", "grpc_log": true}
+2021-02-25T14:28:05.055Z	INFO	channelz/logging.go:50	[core]ccResolverWrapper: sending update to cc: {[{localhost:55680  <nil> 0 <nil>}] <nil> <nil>}	{"system": "grpc", "grpc_log": true}
+2021-02-25T14:28:05.055Z	INFO	channelz/logging.go:50	[core]ClientConn switching balancer to "pick_first"	{"system": "grpc", "grpc_log": true}
+2021-02-25T14:28:05.055Z	INFO	channelz/logging.go:50	[core]Channel switches to new LB policy "pick_first"	{"system": "grpc", "grpc_log": true}
+2021-02-25T14:28:05.055Z	INFO	channelz/logging.go:50	[core]Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2021-02-25T14:28:05.055Z	INFO	channelz/logging.go:50	[core]Subchannel picks a new address "localhost:55680" to connect	{"system": "grpc", "grpc_log": true}
+2021-02-25T14:28:05.055Z	INFO	channelz/logging.go:50	[core]Channel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2021-02-25T14:28:05.056Z	INFO	channelz/logging.go:50	[core]Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2021-02-25T14:28:05.056Z	INFO	channelz/logging.go:50	[core]Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2021-02-25T14:28:05.057Z	INFO	tracegen/config.go:70	generation of traces is limited	{"per-second": 100000}
+2021-02-25T14:36:29.498Z	INFO	tracegen/worker.go:89	traces generated	{"worker": 0, "traces": 20000000}
+2021-02-25T14:36:29.528Z	INFO	channelz/logging.go:50	[core]Channel Connectivity change to SHUTDOWN	{"system": "grpc", "grpc_log": true}
+2021-02-25T14:36:29.528Z	INFO	channelz/logging.go:50	[core]Subchannel Connectivity change to SHUTDOWN	{"system": "grpc", "grpc_log": true}
+2021-02-25T14:36:29.528Z	INFO	tracegen@v0.20.0/main.go:70	stopping the exporter

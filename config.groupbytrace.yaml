@@ -1,0 +1,35 @@
+receivers:
+  otlp:
+    protocols:
+      grpc:
+        endpoint: localhost:55680
+
+processors:
+  groupbytrace:
+    wait_duration: 1s
+    num_traces: 1_000_000
+
+
+
+
+
+
+
+
+
+  batch:
+    send_batch_size: 10_000
+
+exporters:
+  logging:
+
+service:
+  pipelines:
+    traces/loadbalancer:
+      receivers:
+        - otlp
+      processors:
+        - groupbytrace
+        - batch
+      exporters:
+        - logging
