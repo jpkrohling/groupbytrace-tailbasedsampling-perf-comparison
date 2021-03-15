@@ -1,7 +1,7 @@
 #!/bin/bash
 
-OTEL_COLLECTOR=164.90.164.183
-PROMETHEUS=134.209.251.218
+OTEL_COLLECTOR=134.209.254.47
+PROMETHEUS=128.199.56.242
 
 for host in ${OTEL_COLLECTOR} ${PROMETHEUS}; do
     ssh root@${host} "dnf install screen -y"
@@ -17,6 +17,6 @@ ssh root@${PROMETHEUS} "systemctl start prometheus"
 
 ## setup the OpenTelemetry Collector host
 echo Preparing the OpenTelemetry Collector host
-scp ~/go/bin/otelcontribcol_linux_amd64 root@${OTEL_COLLECTOR}:/root/
-scp ~/go/bin/tracegen root@${OTEL_COLLECTOR}:/root/
+scp -C ~/go/bin/otelcontribcol_linux_amd64 root@${OTEL_COLLECTOR}:/root/
+scp -C ~/go/bin/tracegen root@${OTEL_COLLECTOR}:/root/
 scp config.*.yaml root@${OTEL_COLLECTOR}:/root/
