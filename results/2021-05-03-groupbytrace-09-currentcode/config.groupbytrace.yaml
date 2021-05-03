@@ -8,7 +8,7 @@ processors:
   groupbytrace:
     wait_duration: 1s
     num_traces: 10_000_000
-    num_workers: 10
+
   batch:
     send_batch_size: 100_000
 
