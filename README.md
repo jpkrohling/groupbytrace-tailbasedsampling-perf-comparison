@@ -27,7 +27,7 @@ Load is generated using the [`tracegen`](https://github.com/open-telemetry/opent
 
     $ ./runner.sh
 
-For the test, a custom build of the OpenTelemetry Collector Contrib was used based on the `main` branch on Apr 29 (`4be4a1adcdbb0de95872275e99f40e2406e46d4c`), plus the PR [#1710](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/1710). The runner script above expects the binary to exist in your machine under `~/bin/otelcontribcol_linux_amd64`. This is then trasfered to the Equinix machine during the `_setup/prepare-hosts.sh` script. The `tracegen` utility was installed using `go get github.com/open-telemetry/opentelemetry-collector-contrib/tracegen` locally and is transfered with the setup script as well. The OpenTelemetry Collector was started with:
+For the test, a custom build of the OpenTelemetry Collector Contrib was used based on the `main` branch on Apr 29 (`4be4a1adcdbb0de95872275e99f40e2406e46d4c`), plus the PR [#2902](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/2902). The runner script above expects the binary to exist in your machine under `~/bin/otelcontribcol_linux_amd64`. This is then trasfered to the Equinix machine during the `_setup/prepare-hosts.sh` script. The `tracegen` utility was installed using `go get github.com/open-telemetry/opentelemetry-collector-contrib/tracegen` locally and is transfered with the setup script as well. The OpenTelemetry Collector was started with:
 
     $ ./otelcontribcol_linux_amd64 --config config.groupbytrace.yaml --metrics-addr 0.0.0.0:8888 2>&1 | tee otelcol.log
 
