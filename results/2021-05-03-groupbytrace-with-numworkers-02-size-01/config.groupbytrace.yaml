@@ -5,11 +5,12 @@ receivers:
         endpoint: localhost:55680
 
 processors:
-  tail_sampling:
-    decision_wait: 1s
+  groupbytrace:
+    wait_duration: 1s
     num_traces: 10_000_000
-    expected_new_traces_per_sec: 1_000_000
-
+    num_events:  1_000_000
+    num_workers: 1
+  policysampling:
     policies:
       [
         {
@@ -29,7 +30,8 @@ service:
       receivers:
         - otlp
       processors:
-        - tail_sampling
+        - groupbytrace
+        - policysampling
         - batch
       exporters:
         - logging

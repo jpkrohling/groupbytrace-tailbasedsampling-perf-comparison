@@ -1,0 +1,148 @@
+# HELP otelcol_exporter_send_failed_spans Number of spans in failed attempts to send to destination.
+# TYPE otelcol_exporter_send_failed_spans counter
+otelcol_exporter_send_failed_spans{exporter="logging",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b"} 0
+# HELP otelcol_exporter_sent_spans Number of spans successfully sent to destination.
+# TYPE otelcol_exporter_sent_spans counter
+otelcol_exporter_sent_spans{exporter="logging",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b"} 6.9224795e+07
+# HELP otelcol_policysampling_evaluation_latency Duration for the evaluation of the decision
+# TYPE otelcol_policysampling_evaluation_latency histogram
+otelcol_policysampling_evaluation_latency_bucket{policy="client-server-traces",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",success="true",le="5"} 3.4627396e+07
+otelcol_policysampling_evaluation_latency_bucket{policy="client-server-traces",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",success="true",le="10"} 3.4627396e+07
+otelcol_policysampling_evaluation_latency_bucket{policy="client-server-traces",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",success="true",le="20"} 3.4627396e+07
+otelcol_policysampling_evaluation_latency_bucket{policy="client-server-traces",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",success="true",le="50"} 3.4627396e+07
+otelcol_policysampling_evaluation_latency_bucket{policy="client-server-traces",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",success="true",le="100"} 3.4627397e+07
+otelcol_policysampling_evaluation_latency_bucket{policy="client-server-traces",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",success="true",le="200"} 3.4627397e+07
+otelcol_policysampling_evaluation_latency_bucket{policy="client-server-traces",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",success="true",le="500"} 3.4627397e+07
+otelcol_policysampling_evaluation_latency_bucket{policy="client-server-traces",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",success="true",le="1000"} 3.4627397e+07
+otelcol_policysampling_evaluation_latency_bucket{policy="client-server-traces",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",success="true",le="2000"} 3.4627397e+07
+otelcol_policysampling_evaluation_latency_bucket{policy="client-server-traces",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",success="true",le="5000"} 3.4627397e+07
+otelcol_policysampling_evaluation_latency_bucket{policy="client-server-traces",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",success="true",le="+Inf"} 3.4627397e+07
+otelcol_policysampling_evaluation_latency_sum{policy="client-server-traces",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",success="true"} 88.99999999999163
+otelcol_policysampling_evaluation_latency_count{policy="client-server-traces",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",success="true"} 3.4627397e+07
+# HELP otelcol_policysampling_evaluation_outcome Number of success/failures for each endpoint
+# TYPE otelcol_policysampling_evaluation_outcome counter
+otelcol_policysampling_evaluation_outcome{policy="client-server-traces",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",success="true"} 3.4627397e+07
+# HELP otelcol_policysampling_num_decisions Number of times the decisions have been made
+# TYPE otelcol_policysampling_num_decisions counter
+otelcol_policysampling_num_decisions{decision="sampled",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b"} 3.4627397e+07
+# HELP otelcol_process_cpu_seconds Total CPU user and system time in seconds
+# TYPE otelcol_process_cpu_seconds gauge
+otelcol_process_cpu_seconds{service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b"} 11331.490000000002
+# HELP otelcol_process_memory_rss Total physical memory (resident set size)
+# TYPE otelcol_process_memory_rss gauge
+otelcol_process_memory_rss{service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b"} 2.786742272e+09
+# HELP otelcol_process_runtime_heap_alloc_bytes Bytes of allocated heap objects (see 'go doc runtime.MemStats.HeapAlloc')
+# TYPE otelcol_process_runtime_heap_alloc_bytes gauge
+otelcol_process_runtime_heap_alloc_bytes{service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b"} 5.1875796e+08
+# HELP otelcol_process_runtime_total_alloc_bytes Cumulative bytes allocated for heap objects (see 'go doc runtime.MemStats.TotalAlloc')
+# TYPE otelcol_process_runtime_total_alloc_bytes gauge
+otelcol_process_runtime_total_alloc_bytes{service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b"} 4.01894499984e+11
+# HELP otelcol_process_runtime_total_sys_memory_bytes Total bytes of memory obtained from the OS (see 'go doc runtime.MemStats.Sys')
+# TYPE otelcol_process_runtime_total_sys_memory_bytes gauge
+otelcol_process_runtime_total_sys_memory_bytes{service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b"} 6.232866008e+09
+# HELP otelcol_process_uptime Uptime of the process
+# TYPE otelcol_process_uptime counter
+otelcol_process_uptime{service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b"} 845.0138615020002
+# HELP otelcol_processor_batch_batch_send_size Number of units in the batch
+# TYPE otelcol_processor_batch_batch_send_size histogram
+otelcol_processor_batch_batch_send_size_bucket{processor="batch",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="10"} 3
+otelcol_processor_batch_batch_send_size_bucket{processor="batch",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="25"} 6
+otelcol_processor_batch_batch_send_size_bucket{processor="batch",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="50"} 7
+otelcol_processor_batch_batch_send_size_bucket{processor="batch",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="75"} 7
+otelcol_processor_batch_batch_send_size_bucket{processor="batch",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="100"} 7
+otelcol_processor_batch_batch_send_size_bucket{processor="batch",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="250"} 11
+otelcol_processor_batch_batch_send_size_bucket{processor="batch",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="500"} 16
+otelcol_processor_batch_batch_send_size_bucket{processor="batch",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="750"} 18
+otelcol_processor_batch_batch_send_size_bucket{processor="batch",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="1000"} 22
+otelcol_processor_batch_batch_send_size_bucket{processor="batch",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="2000"} 35
+otelcol_processor_batch_batch_send_size_bucket{processor="batch",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="3000"} 47
+otelcol_processor_batch_batch_send_size_bucket{processor="batch",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="4000"} 73
+otelcol_processor_batch_batch_send_size_bucket{processor="batch",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="5000"} 114
+otelcol_processor_batch_batch_send_size_bucket{processor="batch",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="6000"} 169
+otelcol_processor_batch_batch_send_size_bucket{processor="batch",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="7000"} 240
+otelcol_processor_batch_batch_send_size_bucket{processor="batch",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="8000"} 330
+otelcol_processor_batch_batch_send_size_bucket{processor="batch",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="9000"} 449
+otelcol_processor_batch_batch_send_size_bucket{processor="batch",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="10000"} 593
+otelcol_processor_batch_batch_send_size_bucket{processor="batch",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="20000"} 1315
+otelcol_processor_batch_batch_send_size_bucket{processor="batch",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="30000"} 1928
+otelcol_processor_batch_batch_send_size_bucket{processor="batch",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="50000"} 2996
+otelcol_processor_batch_batch_send_size_bucket{processor="batch",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="100000"} 2996
+otelcol_processor_batch_batch_send_size_bucket{processor="batch",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="+Inf"} 2996
+otelcol_processor_batch_batch_send_size_sum{processor="batch",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b"} 6.922479499999999e+07
+otelcol_processor_batch_batch_send_size_count{processor="batch",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b"} 2996
+# HELP otelcol_processor_batch_timeout_trigger_send Number of times the batch was sent due to a timeout trigger
+# TYPE otelcol_processor_batch_timeout_trigger_send counter
+otelcol_processor_batch_timeout_trigger_send{processor="batch",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b"} 2996
+# HELP otelcol_processor_groupbytrace_processor_groupbytrace_conf_num_traces Maximum number of traces to hold in the internal storage
+# TYPE otelcol_processor_groupbytrace_processor_groupbytrace_conf_num_traces gauge
+otelcol_processor_groupbytrace_processor_groupbytrace_conf_num_traces{service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b"} 1e+07
+# HELP otelcol_processor_groupbytrace_processor_groupbytrace_event_latency How long the queue events are taking to be processed
+# TYPE otelcol_processor_groupbytrace_processor_groupbytrace_event_latency histogram
+otelcol_processor_groupbytrace_processor_groupbytrace_event_latency_bucket{event="onTraceExpired",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="5"} 3.4623573e+07
+otelcol_processor_groupbytrace_processor_groupbytrace_event_latency_bucket{event="onTraceExpired",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="10"} 3.4625312e+07
+otelcol_processor_groupbytrace_processor_groupbytrace_event_latency_bucket{event="onTraceExpired",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="20"} 3.4626209e+07
+otelcol_processor_groupbytrace_processor_groupbytrace_event_latency_bucket{event="onTraceExpired",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="50"} 3.4626604e+07
+otelcol_processor_groupbytrace_processor_groupbytrace_event_latency_bucket{event="onTraceExpired",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="100"} 3.4626678e+07
+otelcol_processor_groupbytrace_processor_groupbytrace_event_latency_bucket{event="onTraceExpired",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="200"} 3.4626681e+07
+otelcol_processor_groupbytrace_processor_groupbytrace_event_latency_bucket{event="onTraceExpired",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="500"} 3.4626681e+07
+otelcol_processor_groupbytrace_processor_groupbytrace_event_latency_bucket{event="onTraceExpired",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="1000"} 3.4626681e+07
+otelcol_processor_groupbytrace_processor_groupbytrace_event_latency_bucket{event="onTraceExpired",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="+Inf"} 3.4626681e+07
+otelcol_processor_groupbytrace_processor_groupbytrace_event_latency_sum{event="onTraceExpired",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b"} 70403.99999998866
+otelcol_processor_groupbytrace_processor_groupbytrace_event_latency_count{event="onTraceExpired",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b"} 3.4626681e+07
+otelcol_processor_groupbytrace_processor_groupbytrace_event_latency_bucket{event="onTraceReceived",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="5"} 3.452268e+07
+otelcol_processor_groupbytrace_processor_groupbytrace_event_latency_bucket{event="onTraceReceived",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="10"} 3.4586246e+07
+otelcol_processor_groupbytrace_processor_groupbytrace_event_latency_bucket{event="onTraceReceived",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="20"} 3.4612174e+07
+otelcol_processor_groupbytrace_processor_groupbytrace_event_latency_bucket{event="onTraceReceived",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="50"} 3.4626633e+07
+otelcol_processor_groupbytrace_processor_groupbytrace_event_latency_bucket{event="onTraceReceived",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="100"} 3.4627221e+07
+otelcol_processor_groupbytrace_processor_groupbytrace_event_latency_bucket{event="onTraceReceived",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="200"} 3.4627296e+07
+otelcol_processor_groupbytrace_processor_groupbytrace_event_latency_bucket{event="onTraceReceived",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="500"} 3.4627324e+07
+otelcol_processor_groupbytrace_processor_groupbytrace_event_latency_bucket{event="onTraceReceived",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="1000"} 3.4627397e+07
+otelcol_processor_groupbytrace_processor_groupbytrace_event_latency_bucket{event="onTraceReceived",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="+Inf"} 3.4627397e+07
+otelcol_processor_groupbytrace_processor_groupbytrace_event_latency_sum{event="onTraceReceived",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b"} 1.5908343000003254e+07
+otelcol_processor_groupbytrace_processor_groupbytrace_event_latency_count{event="onTraceReceived",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b"} 3.4627397e+07
+otelcol_processor_groupbytrace_processor_groupbytrace_event_latency_bucket{event="onTraceReleased",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="5"} 3.4606531e+07
+otelcol_processor_groupbytrace_processor_groupbytrace_event_latency_bucket{event="onTraceReleased",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="10"} 3.4612722e+07
+otelcol_processor_groupbytrace_processor_groupbytrace_event_latency_bucket{event="onTraceReleased",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="20"} 3.4621836e+07
+otelcol_processor_groupbytrace_processor_groupbytrace_event_latency_bucket{event="onTraceReleased",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="50"} 3.4626322e+07
+otelcol_processor_groupbytrace_processor_groupbytrace_event_latency_bucket{event="onTraceReleased",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="100"} 3.4626665e+07
+otelcol_processor_groupbytrace_processor_groupbytrace_event_latency_bucket{event="onTraceReleased",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="200"} 3.4626681e+07
+otelcol_processor_groupbytrace_processor_groupbytrace_event_latency_bucket{event="onTraceReleased",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="500"} 3.4626681e+07
+otelcol_processor_groupbytrace_processor_groupbytrace_event_latency_bucket{event="onTraceReleased",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="1000"} 3.4626681e+07
+otelcol_processor_groupbytrace_processor_groupbytrace_event_latency_bucket{event="onTraceReleased",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="+Inf"} 3.4626681e+07
+otelcol_processor_groupbytrace_processor_groupbytrace_event_latency_sum{event="onTraceReleased",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b"} 380124.0000001309
+otelcol_processor_groupbytrace_processor_groupbytrace_event_latency_count{event="onTraceReleased",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b"} 3.4626681e+07
+otelcol_processor_groupbytrace_processor_groupbytrace_event_latency_bucket{event="onTraceRemoved",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="5"} 3.4555971e+07
+otelcol_processor_groupbytrace_processor_groupbytrace_event_latency_bucket{event="onTraceRemoved",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="10"} 3.4586955e+07
+otelcol_processor_groupbytrace_processor_groupbytrace_event_latency_bucket{event="onTraceRemoved",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="20"} 3.4606709e+07
+otelcol_processor_groupbytrace_processor_groupbytrace_event_latency_bucket{event="onTraceRemoved",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="50"} 3.4622247e+07
+otelcol_processor_groupbytrace_processor_groupbytrace_event_latency_bucket{event="onTraceRemoved",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="100"} 3.4625305e+07
+otelcol_processor_groupbytrace_processor_groupbytrace_event_latency_bucket{event="onTraceRemoved",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="200"} 3.4626466e+07
+otelcol_processor_groupbytrace_processor_groupbytrace_event_latency_bucket{event="onTraceRemoved",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="500"} 3.462662e+07
+otelcol_processor_groupbytrace_processor_groupbytrace_event_latency_bucket{event="onTraceRemoved",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="1000"} 3.4626681e+07
+otelcol_processor_groupbytrace_processor_groupbytrace_event_latency_bucket{event="onTraceRemoved",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",le="+Inf"} 3.4626681e+07
+otelcol_processor_groupbytrace_processor_groupbytrace_event_latency_sum{event="onTraceRemoved",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b"} 6.184064999999581e+06
+otelcol_processor_groupbytrace_processor_groupbytrace_event_latency_count{event="onTraceRemoved",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b"} 3.4626681e+07
+# HELP otelcol_processor_groupbytrace_processor_groupbytrace_incomplete_releases Releases that are suspected to have been incomplete
+# TYPE otelcol_processor_groupbytrace_processor_groupbytrace_incomplete_releases counter
+otelcol_processor_groupbytrace_processor_groupbytrace_incomplete_releases{service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b"} 0
+# HELP otelcol_processor_groupbytrace_processor_groupbytrace_num_events_in_queue Number of events currently in the queue
+# TYPE otelcol_processor_groupbytrace_processor_groupbytrace_num_events_in_queue gauge
+otelcol_processor_groupbytrace_processor_groupbytrace_num_events_in_queue{service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b"} 0
+# HELP otelcol_processor_groupbytrace_processor_groupbytrace_num_traces_in_memory Number of traces currently in the in-memory storage
+# TYPE otelcol_processor_groupbytrace_processor_groupbytrace_num_traces_in_memory gauge
+otelcol_processor_groupbytrace_processor_groupbytrace_num_traces_in_memory{service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b"} 0
+# HELP otelcol_processor_groupbytrace_processor_groupbytrace_spans_released Spans released to the next consumer
+# TYPE otelcol_processor_groupbytrace_processor_groupbytrace_spans_released counter
+otelcol_processor_groupbytrace_processor_groupbytrace_spans_released{service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b"} 6.9224795e+07
+# HELP otelcol_processor_groupbytrace_processor_groupbytrace_traces_evicted Traces evicted from the internal buffer
+# TYPE otelcol_processor_groupbytrace_processor_groupbytrace_traces_evicted counter
+otelcol_processor_groupbytrace_processor_groupbytrace_traces_evicted{service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b"} 0
+# HELP otelcol_processor_groupbytrace_processor_groupbytrace_traces_released Traces released to the next consumer
+# TYPE otelcol_processor_groupbytrace_processor_groupbytrace_traces_released counter
+otelcol_processor_groupbytrace_processor_groupbytrace_traces_released{service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b"} 3.4626681e+07
+# HELP otelcol_receiver_accepted_spans Number of spans successfully pushed into the pipeline.
+# TYPE otelcol_receiver_accepted_spans counter
+otelcol_receiver_accepted_spans{receiver="otlp",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",transport="grpc"} 6.9224795e+07
+# HELP otelcol_receiver_refused_spans Number of spans that could not be pushed into the pipeline.
+# TYPE otelcol_receiver_refused_spans counter
+otelcol_receiver_refused_spans{receiver="otlp",service_instance_id="48a58244-36b6-458b-af1e-18e99f91b84b",transport="grpc"} 0
